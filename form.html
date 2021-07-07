@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="John"
+          size="100"
+          maxlength="10"
+          required
+        /><br /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" /><br /><br />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="someone@gamil.com"
+        /><br /><br />
+
+        <h4>Gender</h4>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br /><br />
+
+        <h4>Subjects</h4>
+        <input type="checkbox" id="math" name="subject-one" value="math" />
+        <label for="math">Math</label>
+        <input
+          type="checkbox"
+          id="science"
+          name="subject-two"
+          value="science"
+        />
+        <label for="science">Science</label>
+        <input
+          type="checkbox"
+          id="social"
+          name="subject-three"
+          value="Social"
+        />
+        <label for="social">Social</label>
+        <input
+          type="checkbox"
+          id="account"
+          name="subject-four"
+          value="Account"
+        />
+        <label for="account">Acccount</label>
+        <br />
+        <br />
+
+        <label for="phone">Phone:</label>
+        <input
+          type="number"
+          id="phone"
+          min="1"
+          max="3"
+          placeholder="+977-9854785214"
+        />
+        <label for="file">Image</label>
+        <input id="file" type="file" />
+        <label for="date">Date</label>
+        <input type="date" id="date" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Public Info</legend>
+        <label for="messege">Message:</label><br />
+        <textarea name="messege" id="message" rows="5" cols="50"></textarea>
+        <br /><br />
+
+        <label for="cars">Cars: </label>
+        <select name="cars" id="cars">
+          <option value="fiat">Fiat</option>
+          <option value="toyata">Toyata</option>
+          <option value="kia">Kia</option>
+          <option value="vokswagan" selected>Vokswagan</option>
+          <option value="fiat">Fiat</option>
+          <option value="toyata">Toyata</option>
+          <option value="kia">Kia</option>
+          <option value="vokswagan" selected>Vokswagan</option>
+          <option value="fiat">Fiat</option>
+          <option value="toyata">Toyata</option>
+          <option value="kia">Kia</option>
+          <option value="vokswagan" selected>Vokswagan</option>
+          <option value="fiat">Fiat</option>
+          <option value="toyata">Toyata</option>
+          <option value="kia">Kia</option>
+          <option value="vokswagan" selected>Vokswagan</option>
+        </select>
+
+        <br /><br />
+        <input type="text" list="browsers" name="broswers" />
+        <datalist id="browsers">
+          <option value="firefox"></option>
+          <option value="chrome"></option>
+          <option value="opera"></option>
+          <option value="safari"></option>
+        </datalist>
+      </fieldset>
+
+      <input type="reset" />
+      <input type="submit" value="submit" />
+      <button type="button" disabled>
+        <span>icon</span>
+        <span>send</span>
+      </button>
+    </form>
+  </body>
+</html>
